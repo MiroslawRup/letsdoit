@@ -1,10 +1,25 @@
-/* Colors */
-$paragraph-color: #000000;
-$brand-main-color: #ff0000;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 
-/* Font sizes */
-$paragraph-font-size: 16px;
+/* Colors */
+$aside-bg-color: rgb(25,25,25);
+$main-bg-color: rgb(245,245,242);
+$header-bg-color: rgb(255,255,255);
+
+$border-color: rgb(227,227,227);
+
+$font-color: rgb(156,156,156);
+$font-color-active: rgb(86,129,159);
+$aside-font-color: rgb(153,153,153);
+
 
 /* Fonts */
-$brand-font: "Open Sans", Helvetica, Arial;
-$paragraph-font: "Open Sans", Helvetica, Arial;
+$font: 'Roboto';
+$paragraph-font-size: 16px;
+
+/* Borders */
+$border: solid 1px $border-color;
+
+/* Layout dimensions */
+$container-max-width: 1280;
+$aside-width: 188;
+$header-height: 60;

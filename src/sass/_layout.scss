@@ -1,0 +1,45 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: #{$container-max-width}px;
+  margin: 0 auto;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: calc(((100% - #{$container-max-width}px) / 2) + #{$aside-width}px);
+  height: #{$header-height}px;
+  width: calc(#{$container-max-width}px - #{$aside-width}px);
+  background-color: $header-bg-color;
+  border-bottom: $border;
+  border-right: $border;
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
+  line-height: #{$header-height}px
+
+  //border: 1px red solid;
+}
+
+.aside {
+  position: fixed;
+  top: 0;
+  width: #{$aside-width}px;
+  background-color: $aside-bg-color;
+  color: $aside-font-color;
+
+  bottom: 0;
+  //border: 1px green solid;
+}
+
+.main {
+  background-color: $main-bg-color;
+  margin-left: #{$aside-width}px;
+  margin-top: #{$header-height}px;
+
+  height: 2000px;
+  //border: 1px blue solid;
+}

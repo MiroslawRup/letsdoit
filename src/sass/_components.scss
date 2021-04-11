@@ -1,0 +1,36 @@
+.aside__logo_container {
+  position: relative;
+  height: #{$header-height}px;
+}
+
+.aside__logo_image {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header__child {
+  padding: 0 15px;
+  border-left: $border;
+  color: $font-color;
+}
+
+.header__child_elem {
+  display: inline-block;
+  padding: 0 5px;
+  font-family: $font;
+  font-weight: 400;
+
+}
+
+.user_font {
+  font-size: 13px;
+  color: $font-color-active;
+}
+
+.money_font {
+  font-size: 20px;
+  font-weight: bold;
+}
