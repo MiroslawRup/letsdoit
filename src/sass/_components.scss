@@ -1,36 +1,358 @@
+.aside__logo {
+  display: flex;
+  height: #{$header-height}px;
+  align-items: center;
+  text-align: center;
+}
+
 .aside__logo_container {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+}
+
+.aside__hamburger_container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.aside__navigation_list {
+  list-style-type: none;
+  padding-bottom: 24px;
+  border-bottom: solid $border-nav-color 1px;
+}
+
+.aside__navigation_element {
   position: relative;
+  display: flex;
+  align-items: center;
+  line-height: 40px;
+  font-family: $font;
+  font-weight: 300;
+  font-size: 14px;
+  color: $aside-font-color;
+}
+
+.aside__navigation_element:hover {
+  color: white;
+  background-color: $aside-hover-bg-color;
+
+  .active_strip {
+    position: absolute;
+    width: 4px;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    background-color: $main-link-icon-color;
+    border-radius: 6px;
+  }
+}
+
+.aside__navigation_element i {
+  padding-left: 20px;
+  padding-right: 12px;
+}
+
+.aside__navigation_element i::before {
+  display: flex;
+}
+
+.aside__manager_header {
+  font-family: $font;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding-left: 20px;
+  padding-top: 24px;
+}
+
+.aside__manager_data {
+  display: flex;
+  align-items: center;
+  margin-top: 14px;
+}
+
+.aside__manager_photo {
+  flex: 1;
+  text-align: right;
+}
+
+.dot_2 {
+  position: absolute;
+  top: 0px;
+  left: 48px;
+  width: 12px;
+  height: 12px;
+  background-color: $aside-manager-active-dot-color;
+  border-radius: 6px;
+}
+
+.aside__manager_name {
+  flex: 2;
+  margin-left: 10px;
+  font-family: $font;
+  font-weight: 300;
+  font-size: 14px;
+  color: $font-color-active;
+}
+
+.header__box {
+  padding: 0 15px;
+  color: $font-color;
+  display: flex;
+  align-items: center;
+  border-left: $border;
   height: #{$header-height}px;
 }
 
-.aside__logo_image {
-  position: absolute;
-  display: block;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.header__child {
-  padding: 0 15px;
-  border-left: $border;
-  color: $font-color;
-}
-
-.header__child_elem {
-  display: inline-block;
-  padding: 0 5px;
+.header__box_elem {
+  display: flex;
+  padding: 0 6px;
   font-family: $font;
   font-weight: 400;
-
+  align-items: center;
 }
 
-.user_font {
+.header__box_elem i::before {
+  display: flex;
+}
+
+.spec {
+  position: relative;
+}
+
+.dot {
+  position: absolute;
+  top: -3px;
+  left: 15px;
+  width: 8px;
+  height: 8px;
+  background-color: $main-link-icon-color;
+  border-radius: 4px;
+}
+
+.header__user_font {
   font-size: 13px;
   color: $font-color-active;
 }
 
-.money_font {
+.header__money_font {
   font-size: 20px;
-  font-weight: bold;
+}
+
+.main__box {
+  display: flex;
+  flex-direction: column;
+  margin: 0 18px 18px;
+  background-color: $main-bg-box-color;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.main__title {
+  display: flex;
+  width: 100%;
+  height: 46px;
+  border-bottom: 1px solid $border-color;
+  align-items: center;
+  padding-left: 18px;
+}
+
+.main__title_txt {
+  flex: 1;
+  text-transform: uppercase;
+  color: $main-font-color;
+  font-family: $font;
+  font-weight: 500;
+}
+
+.main__table {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 110px;
+  border-bottom: 1px solid $border-color;
+  align-items: center;
+}
+
+.main__table_ex {
+  display: flex;
+  height: 40px;
+  border: 1px solid $border-color;
+  align-items: center;
+  border-radius: 3px;
+}
+
+.main__table_in {
+  display: flex;
+  height: 30px;
+  border-right: 1px solid $border-color;
+  align-items: center;
+  color: $main-table-color;
+  font-family: $font;
+  font-weight: 300;
+  font-size: 14px;
+  padding-left: 12px;
+  padding-right: 56px;
+}
+
+.last_cell {
+  border: none;
+}
+
+.main__table_cal_icon {
+  font-size: 14px;
+  color: $font-color;
+  padding-right: 12px;
+}
+
+.main__table_cal_icon i::before {
+  display: flex;
+}
+
+.main__table_button {
+  display: flex;
+  height: 40px;
+  align-items: center;
+  border-radius: 3px;
+  color: $main-button-icon-color;
+  width: 40px;
+  margin-left: 10px;
+  background-color: $button-bg_color;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.main__table_button i::before{
+  display: flex;
+}
+
+.main__data {
+  display: flex;
+  justify-content: space-between;
+  width: 685px;
+  margin: 21px auto;
+}
+
+.main__data table {
+  width: 340px;
+  border-collapse: collapse;
+  font-family: $font;
+}
+
+.main__data table .item_name {
+  font-weight: 700;
+  color: $aside-font-color;
+}
+
+.main__data table .value {
+  text-align: right;
+  font-weight: 300;
+  color: $main-table-color;
+}
+
+.table_1 {
+  margin: 0 30px 0 0;
+}
+
+.table_2 {
+  margin: 0 0 0 30px;
+}
+
+.main__data table td {
+  border-bottom: 1px solid $border-color;
+  padding: 18px 0 6px 0;
+}
+
+.main__chart {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0;
+  width: 685px;
+  margin: 0 auto;
+}
+
+.main__chart_title {
+  padding-bottom: 35px;
+  font-weight: 700;
+  color: $aside-font-color;
+  font-family: $font;
+}
+
+.main__links_table {
+  display: flex;
+  margin: 0 auto;
+  width: 685px;
+}
+
+.main__links_table table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.main__links_table table td {
+  border-top: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
+  padding: 20px 14px;
+}
+
+.main__links_table table tr:hover {
+  background-color: $main-table-bg-color;
+}
+
+.main__links_table table tr:hover .icon {
+  display: flex;
+}
+
+.main__links_table .title {
+  font-family: $font;
+  font-weight: 700;
+  font-size: 16px;
+  color: $main-font-color;
+  width: 305px;
+}
+
+.main__links_table .link {
+  font-family: $font;
+  font-weight: 300;
+  font-size: 16px;
+  width: 280px;
+
+  a {
+    text-decoration: none;
+    color: $font-color-active;
+  }
+}
+
+.main__links_table .icon {
+  display: none;
+
+  .icon-links {
+    color: $main-link-icon-color;
+    padding-left: 10px;
+  }
+
+  .icon-trash {
+    color: $font-color;
+    padding-left: 20px;
+  }
+}
+
+.main__links_table .icon i::before {
+  display: flex;
+}
+
+.main__links_button {
+  display: flex;
+  height: 40px;
+  align-items: center;
+  border-radius: 3px;
+  color: $main-button-icon-color;
+  width: 125px;
+  margin: 25px auto;
+  background-color: $button-bg_color;
+  justify-content: center;
+  font-size: 18px;
+  font-family: $font;
+  font-weight: 300;
 }

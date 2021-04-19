@@ -1,5 +1,8 @@
 *, *::before, *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  //line-height: 0.6;
 }
 
 .container {
@@ -16,12 +19,9 @@
   background-color: $header-bg-color;
   border-bottom: $border;
   border-right: $border;
-  display: inline-flex;
+  display: flex;
   justify-content: flex-end;
   align-items: center;
-  line-height: #{$header-height}px
-
-  //border: 1px red solid;
 }
 
 .aside {
@@ -30,16 +30,14 @@
   width: #{$aside-width}px;
   background-color: $aside-bg-color;
   color: $aside-font-color;
-
   bottom: 0;
-  //border: 1px green solid;
 }
 
 .main {
   background-color: $main-bg-color;
   margin-left: #{$aside-width}px;
   margin-top: #{$header-height}px;
-
-  height: 2000px;
-  //border: 1px blue solid;
+  min-height: calc(100vh - #{$header-height}px);
+  //overflow: auto;
+  padding: 18px 0;
 }
