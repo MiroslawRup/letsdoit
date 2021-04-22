@@ -9,131 +9,114 @@
 
 <body>
 
-<div class="container">
-
+<!-- header -->
   <header class="header">
     <div class="header__box">
       <div class="header__box_elem">
-        <i class="icon-wallet"></i>
+        <a href="#"><i class="icon-wallet"></i></a>
       </div>
       <div class="header__box_elem header__money_font">
-        $1,500.00
+        <a href="#">$1,500.00</a>
       </div>
       <div class="header__box_elem">
-        <i class="icon-arrow-down"></i>
+          <a href="#"><i class="icon-arrow-down"></i></a>
       </div>
     </div>
     <div class="header__box">
       <div class="header__box_elem spec">
-        <i class="icon-notification"></i>
+        <a href="#"><i class="icon-notification"></i></a>
         <div class="dot"></div>
       </div>
-
-
     </div>
     <div class="header__box">
       <div class="header__box_elem">
-        <i class="icon-profile"></i>
+        <a href="#"><i class="icon-profile"></i></a>
       </div>
-
       <div class="header__box_elem header__user_font">
-        Leonardo Dicaprio
+        <a href="#">Leonardo Dicaprio</a>
       </div>
     </div>
     <div class="header__box">
       <div class="header__box_elem">
-        <i class="icon-quit"></i>
+        <a href="#"><i class="icon-quit"></i></a>
       </div>
     </div>
-
   </header>
 
+<!-- aside -->
   <aside class="aside">
     <div class="aside__logo">
       <div class="aside__logo_container">
         <img src="images/logo.png" alt="logo" class="aside__logo_image">
       </div>
       <div class="aside__hamburger_container">
-        <img src="images/hamburger.png" alt="logo" class="aside__hamburger_image">
+        <a href="#"><img src="images/hamburger.png" alt="logo" class="aside__hamburger_image"></a>
       </div>
     </div>
     <div class="aside__navigation_container">
       <ul class="aside__navigation_list">
         <li class="aside__navigation_element">
-          <i class="icon-general"></i>
-          General
+          <a href="#"><i class="icon-general"></i>General</a>
           <div class="active_strip"></div>
         </li>
         <li class="aside__navigation_element">
-          <i class="icon-details"></i>
-          Details
+          <a href="#"><i class="icon-details"></i>Details</a>
           <div class="active_strip"></div>
         </li>
         <li class="aside__navigation_element">
-          <i class="icon-links"></i>
-          Links
+          <a href="#"><i class="icon-links"></i>Links</a>
           <div class="active_strip"></div>
         </li>
         <li class="aside__navigation_element">
-          <i class="icon-banners"></i>
-          Banners
+          <a href="#"><i class="icon-banners"></i>Banners</a>
           <div class="active_strip"></div>
         </li>
         <li class="aside__navigation_element">
-          <i class="icon-personaldata"></i>
-          Personal data
+          <a href="#"><i class="icon-personaldata"></i>Personal data</a>
           <div class="active_strip"></div>
         </li>
         <li class="aside__navigation_element">
-          <i class="icon-payout"></i>
-          Payout
+          <a href="#"><i class="icon-payout"></i>Payout</a>
           <div class="active_strip"></div>
         </li>
         <li class="aside__navigation_element">
-          <i class="icon-postback"></i>
-          Postback
+          <a href="#"><i class="icon-postback"></i>Postback</a>
           <div class="active_strip"></div>
         </li>
       </ul>
     </div>
     <div class="aside__manager">
       <div class="aside__manager_header">
-        <p>Your Manager</p>
+        <h3>Your Manager</h3>
       </div>
       <div class="aside__manager_data">
-        <div class="aside__manager_photo spec">
+
+        <a href="#" class="aside__manager_photo spec">
           <img src="images/photo.png" alt="manager" class="">
           <div class="dot_2"></div>
-        </div>
-        <div class="aside__manager_name">
+        </a>
+        <a href="#" class="aside__manager_name">
           <p>Mikhael E.</p>
-        </div>
+        </a>
       </div>
     </div>
   </aside>
 
+  <!-- main -->
   <main class="main">
     <div class="main__general_stat main__box">
       <div class="main__title">
-        <div class="main__title_txt">
-          General statistic
-        </div>
+        <h1 class="main__title_txt">General statistic</h1>
       </div>
       <div class="main__table">
         <div class="main__table_ex">
-          <div class="main__table_in">
-            16.05.2016
-          </div>
-          <div class="main__table_in last_cell">
-            16.05.2016
-          </div>
+          <input class="main__table_in" placeholder="16.05.2016"></input>
+          <input class="main__table_in last_cell" placeholder="16.05.2016"></input>
           <div class="main__table_cal_icon">
-            <i class="icon-calendar"></i>
+            <a href="#"><i class="icon-calendar"></i></a>
           </div>
         </div>
-        <div class="main__table_button">
-          <i class="icon-refresh"></i>
-        </div>
+        <a class="main__table_button" href="#"><i class="icon-refresh"></i></a>
       </div>
       <div class="main__data">
         <table class="table_1">
@@ -165,32 +148,56 @@
 
     <div class="main__links main__box">
       <div class="main__title">
-        <div class="main__title_txt">Links</div>
+        <h1 class="main__title_txt">Links</h1>
       </div>
-      <div class="main__links_button">
-        + add new
-      </div>
+      <a class="main__links_button" href="#">+ add new</a>
       <div class="main__links_table">
         <table>
-          <tr><td class="title">Home page</td><td class="link"><a href="#">http://www.homepage.com</a></td><td><div class="icon"><i class="icon-links"></i><i class="icon-trash"></i></div></td></tr>
-          <tr><td class="title">Currently offer</td><td class="link"><a href="#">http://www.currently.com</a></td><td><div class="icon"><i class="icon-links"></i><i class="icon-trash"></i></div></td></tr>
-          <tr><td class="title">Blurpix</td><td class="link"><a href="#">http://www.blurpix.com</a></td><td><div class="icon"><i class="icon-links"></i><i class="icon-trash"></i></div></td></tr>
-          <tr><td class="title">Your Site</td><td class="link"><a href="#">http://www.yoursite.com</a></td><td><div class="icon"><i class="icon-links"></i><i class="icon-trash"></i></div></td></tr>
-          <tr><td class="title">Google</td><td class="link"><a href="#">http://www.google.com</a></td><td><div class="icon"><i class="icon-links"></i><i class="icon-trash"></i></div></td></tr>
-          <tr><td class="title">Facebook</td><td class="link"><a href="#">http://www.facebook.com</a></td><td><div class="icon"><i class="icon-links"></i><i class="icon-trash"></i></div></td></tr>
-          <tr><td class="title">Dashboard</td><td class="link"><a href="#">http://www.dashboard.com</a></td><td><div class="icon"><i class="icon-links"></i><i class="icon-trash"></i></div></td></tr>
-          <tr><td class="title">Blurax</td><td class="link"><a href="#">http://www.blurax.com</a></td><td><div class="icon"><i class="icon-links"></i><i class="icon-trash"></i></div></td></tr>
-          <tr><td class="title">Piece of Wine</td><td class="link"><a href="#">http://www.pieceofwine.com</a></td><td><div class="icon"><i class="icon-links"></i><i class="icon-trash"></i></div></td></tr>
-          <tr><td class="title">Twitter</td><td class="link"><a href="#">http://www.twitter.com</a></td><td><div class="icon"><i class="icon-links"></i><i class="icon-trash"></i></div></td></tr>
+          <tr>
+            <td class="title">Home page</td><td class="link"><a href="#">http://www.homepage.com</a></td>
+            <td><div class="icon"><a class="link_icon" href="#"><i class="icon-links"></i></a><a class="trash_icon" href="#"><i class="icon-trash"></i></a></div></td>
+          </tr>
+          <tr>
+            <td class="title">Currently offer</td><td class="link"><a href="#">http://www.currently.com</a></td>
+            <td><div class="icon"><a class="link_icon" href="#"><i class="icon-links"></i></a><a class="trash_icon" href="#"><i class="icon-trash"></i></a></div></td>
+          </tr>
+          <tr>
+            <td class="title">Blurpix</td><td class="link"><a href="#">http://www.blurpix.com</a></td>
+            <td><div class="icon"><a class="link_icon" href="#"><i class="icon-links"></i></a><a class="trash_icon" href="#"><i class="icon-trash"></i></a></div></td>
+          </tr>
+          <tr>
+            <td class="title">Your Site</td><td class="link"><a href="#">http://www.yoursite.com</a></td>
+            <td><div class="icon"><a class="link_icon" href="#"><i class="icon-links"></i></a><a class="trash_icon" href="#"><i class="icon-trash"></i></a></div></td>
+          </tr>
+          <tr>
+            <td class="title">Google</td><td class="link"><a href="#">http://www.google.com</a></td>
+            <td><div class="icon"><a class="link_icon" href="#"><i class="icon-links"></i></a><a class="trash_icon" href="#"><i class="icon-trash"></i></a></div></td>
+          </tr>
+          <tr>
+            <td class="title">Facebook</td><td class="link"><a href="#">http://www.facebook.com</a></td>
+            <td><div class="icon"><a class="link_icon" href="#"><i class="icon-links"></i></a><a class="trash_icon" href="#"><i class="icon-trash"></i></a></div></td>
+          </tr>
+          <tr>
+            <td class="title">Dashboard</td><td class="link"><a href="#">http://www.dashboard.com</a></td>
+            <td><div class="icon"><a class="link_icon" href="#"><i class="icon-links"></i></a><a class="trash_icon" href="#"><i class="icon-trash"></i></a></div></td>
+          </tr>
+          <tr>
+            <td class="title">Blurax</td><td class="link"><a href="#">http://www.blurax.com</a></td>
+            <td><div class="icon"><a class="link_icon" href="#"><i class="icon-links"></i></a><a class="trash_icon" href="#"><i class="icon-trash"></i></a></div></td>
+          </tr>
+          <tr>
+            <td class="title">Piece of Wine</td><td class="link"><a href="#">http://www.pieceofwine.com</a></td>
+            <td><div class="icon"><a class="link_icon" href="#"><i class="icon-links"></i></a><a class="trash_icon" href="#"><i class="icon-trash"></i></a></div></td>
+          </tr>
+          <tr>
+            <td class="title">Twitter</td><td class="link"><a href="#">http://www.twitter.com</a></td>
+            <td><div class="icon"><a class="link_icon" href="#"><i class="icon-links"></i></a><a class="trash_icon" href="#"><i class="icon-trash"></i></a></div></td>
+          </tr>
         </table>
       </div>
-      <div class="main__links_button">
-        + add new
-      </div>
+      <a class="main__links_button" href="#">+ add new</a>
     </div>
   </main>
-
-</div>
 
 </body>
 

@@ -2,7 +2,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  //line-height: 0.6;
 }
 
 .container {
@@ -13,15 +12,14 @@
 .header {
   position: fixed;
   top: 0;
-  left: calc(((100% - #{$container-max-width}px) / 2) + #{$aside-width}px);
+  right: 0;
   height: #{$header-height}px;
-  width: calc(#{$container-max-width}px - #{$aside-width}px);
   background-color: $header-bg-color;
   border-bottom: $border;
-  border-right: $border;
-  display: flex;
   justify-content: flex-end;
+  display: flex;
   align-items: center;
+  width: calc(100vw - #{$aside-width}px);
 }
 
 .aside {
@@ -38,6 +36,5 @@
   margin-left: #{$aside-width}px;
   margin-top: #{$header-height}px;
   min-height: calc(100vh - #{$header-height}px);
-  //overflow: auto;
   padding: 18px 0;
 }
